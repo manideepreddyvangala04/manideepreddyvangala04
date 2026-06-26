@@ -18,28 +18,54 @@ I am an **Embedded Systems Engineer** specializing in high-performance C/C++ dev
 
 ---
 
+### ⚡ Currently Working On
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Status-Active%20Development-success?style=for-the-badge&logo=github&color=2496ED" alt="Active Development" />
+</p>
+
+#### 🩺 ESP32 Brachial Health Monitoring System
+A multi-sensor wearable diagnostic band designed for non-invasive, continuous brachial artery health and vitals monitoring.
+
+- **The Objective:** Real-time physiological telemetry (Heart Rate, SpO2, Skin/Body Temperature) optimized for continuous wear.
+- **Hardware Integration:**
+  - **ESP32** dual-core processor managing multi-threaded sensor reading task queues.
+  - **MAX30102** Pulse Oximeter & Heart-Rate Sensor for PPG readings.
+  - **MLX90614** Contactless Infrared Thermometer for body/skin temperature logging.
+  - **BMP280** Barometric Pressure & Ambient Temperature Sensor.
+  - **ADXL345** 3-Axis Accelerometer for motion detection and activity level analysis.
+- **Key Breakthroughs:**
+  - Designed and implemented a **Complementary/Kalman Filtering mechanism** using ADXL345 acceleration data to filter out motion artifacts and noise in optical PPG (MAX30102) readings.
+  - Implemented low-latency **multithreaded task scheduling via FreeRTOS** to ensure real-time I2C sensor reading consistency without buffer overflows.
+  - Built a lightweight BLE-GATT server to transmit physiological telemetry packs directly to a local web client.
+- **Firmware Stack:** C++, FreeRTOS, ESP-IDF, I2C, Bluetooth Low Energy.
+
+---
+
 ### 🛠️ Hardware & Systems Engineering
-- 🎯 **Current Focus:** Advanced telemetry systems, BLE-based wearables, and real-time medical diagnostic systems.
-- 🧠 **Technical Core:** C, C++, FreeRTOS, ESP-IDF, STM32, Arduino.
-- 🔌 **Connectivity:** BLE (HID-over-GATT, custom profiles), Wi-Fi (ESP32), CAN Bus, SPI, I2C.
+
+<details>
+<summary><b>📐 Technical Core & Architecture</b></summary>
+<br>
+
+- **Languages:** C, C++ (Modern C++14/17 for embedded), Assembly, Python.
+- **Platforms/MCUs:** ESP32 (ESP-IDF / Arduino), STM32 (HAL / LL), STM32F4/F7, Arduino Core.
+- **RTOS & Kernels:** FreeRTOS (Multi-tasking, Queues, Semaphores, Event Groups), bare-metal architectures.
+- **Methodologies:** Low-power optimization, memory footprint reduction, interrupt-driven design, DMA (Direct Memory Access).
+</details>
+
+<details>
+<summary><b>🔌 Connectivity & Protocols</b></summary>
+<br>
+
+- **Wired:** CAN Bus (Controller Area Network), I2C, SPI, UART/USART, OneWire.
+- **Wireless:** BLE (Bluetooth Low Energy - Custom GATT, HID-over-GATT), Wi-Fi (ESP32 Station/AP, TCP/IP stack), MQTT, WebSockets.
+- **Telemetry & Logging:** SD card logging, JSON serialization, edge-processing.
+</details>
 
 ---
 
 ### 🚀 Interactive Projects
-
-<details>
-<summary><b>🩺 ESP32 Brachial Health Monitoring System</b></summary>
-<br>
-A multi-sensor wearable diagnostic band designed for non-invasive, continuous brachial artery health and vitals monitoring.
-
-- **Hardware:** ESP32, MAX30102 (SpO2 & Heart Rate), MLX90614 (Contactless IR Body Temp), BMP280 (Ambient Temp & Pressure), ADXL345 (3-Axis Accelerometer).
-- **Features:**
-  - **Dynamic Vitals Tracking:** Simultaneous real-time logging of blood oxygen saturation (SpO2), heart rate, and skin/body temperature.
-  - **Motion Artifact Reduction:** Leverages ADXL345 acceleration data to filter out movement noise and ensure high-accuracy optical sensor readings.
-  - **Local & Remote Telemetry:** Transmits structured clinical telemetry over BLE and Wi-Fi to a dedicated web dashboard.
-  - **Fail-Safe Monitoring:** Real-time on-chip alerts for abnormal physiological events using lightweight edge-processing.
-- **Stack:** C++, FreeRTOS, ESP-IDF, Bluetooth Low Energy, I2C Protocol.
-</details>
 
 <details>
 <summary><b>🏎️ RACEPULSE: ESP32 Endurance Race Car Telemetry</b></summary>
@@ -69,7 +95,8 @@ A wrist-mounted wearable that uses 6-axis IMU data to control cursors via BLE.
 
 ---
 
-### 📊 Performance Metrics
+### 📊 Performance Metrics & Activity
+
 <p align="left">
   <img src="https://github-profile-trophy.vercel.app/?username=manideepreddyvangala04&theme=tokyonight&no-frame=true&margin-w=15" alt="GitHub Trophies" />
 </p>
@@ -79,6 +106,20 @@ A wrist-mounted wearable that uses 6-axis IMU data to control cursors via BLE.
 </p>
 
 ---
+
+### 🤝 Recruiter Quick-Connect
+
+<details>
+<summary><b>💼 Looking for an Embedded Systems Engineer? Expand here!</b></summary>
+<br>
+
+If you are a technical recruiter or hiring manager looking for a proactive firmware developer who loves hardware-software co-design, here is why we should connect:
+- **Immediate Value:** I have hands-on experience building multi-sensor arrays, configuring real-time operating systems (FreeRTOS), and writing optimized C/C++ firmware.
+- **My Toolset:** ESP-IDF, STM32CubeMX, PlatformIO, VS Code, Git/GitHub, Logic Analyzers, Oscilloscopes, and Multimeters.
+- **Ready to Innovate:** Eager to tackle roles in IoT, wearable tech, automotive/motorsport systems, and biomedical instrumentation.
+
+Let's discuss how my expertise in low-latency systems and RTOS can accelerate your team's hardware products!
+</details>
 
 <p align="center">
   <a href="https://linkedin.com/in/manideepreddyvangala04">
