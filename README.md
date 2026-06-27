@@ -20,9 +20,7 @@ I am an **Embedded Systems Engineer** specializing in high-performance C/C++ dev
 
 ### ⚡ Currently Working On
 
-<p align="left">
-  <img src="https://img.shields.io/badge/Status-Active%20Development-success?style=for-the-badge&logo=github&color=2496ED" alt="Active Development" />
-</p>
+
 
 #### 🩺 ESP32 Brachial Health Monitoring System
 A multi-sensor wearable diagnostic band designed for non-invasive, continuous brachial artery health and vitals monitoring.
