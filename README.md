@@ -46,7 +46,7 @@ A multi-sensor wearable diagnostic band designed for non-invasive, continuous br
 <summary><b>📐 Technical Core & Architecture</b></summary>
 <br>
 
-- **Languages:** C, C++ (Modern C++14/17 for embedded), Assembly, Python.
+- **Languages:** C, C++ (Modern C++14/17 for embedded), Python.
 - **Platforms/MCUs:** ESP32 (ESP-IDF / Arduino), STM32 (HAL / LL), STM32F4/F7, Arduino Core.
 - **RTOS & Kernels:** FreeRTOS (Multi-tasking, Queues, Semaphores, Event Groups), bare-metal architectures.
 - **Methodologies:** Low-power optimization, memory footprint reduction, interrupt-driven design, DMA (Direct Memory Access).
