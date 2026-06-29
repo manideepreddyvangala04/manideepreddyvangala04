@@ -58,6 +58,7 @@ A multi-sensor wearable diagnostic band designed for non-invasive, continuous br
 - **Wireless:** BLE (Bluetooth Low Energy - Custom GATT, HID-over-GATT), Wi-Fi (ESP32 Station/AP, TCP/IP stack), MQTT, WebSockets.
 - **Telemetry & Logging:** SD card logging, JSON serialization, edge-processing.
 </details>
+
 ---
 
 ### 🚀 Interactive Projects
