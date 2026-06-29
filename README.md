@@ -59,24 +59,6 @@ A multi-sensor wearable diagnostic band designed for non-invasive, continuous br
 - **Telemetry & Logging:** SD card logging, JSON serialization, edge-processing.
 </details>
 
-<details>
-<summary><b>🌉 ESP32 Structural Health Monitoring (SHM) System</b></summary>
-<br>
-An open-source, embedded IoT telemetry system designed to monitor bridges and civil structures for mechanical stress, extreme impacts, and dangerous road conditions.
-
-- **The Objective:** Real-time structural safety telemetry (stable Pitch/Roll tilt, sudden G-force impacts, surface freezing warnings) streamed to cloud dashboards via MQTT.
-- **Hardware Integration:**
-  - **ESP32** dual-core processor managing low-latency data loops.
-  - **MPU6050** 6-DOF IMU (Accelerometer & Gyroscope) for tilt and impact tracking.
-  - **MLX90614** contactless infrared thermopile sensor for exact road surface temperature.
-- **Key Breakthroughs:**
-  - Designed and implemented a **Complementary Filter** to fuse gyroscope and accelerometer data to compute robust, drift-free Pitch and Roll angles.
-  - Resolved **units mismatch errors** by converting MPU6050 gyroscope angular velocity from rad/s to deg/s ($\text{deg/s} = \text{rad/s} \times 180/\pi$) before integration.
-  - Developed immediate edge-triggered notification flags (`IMPACT_DETECTED`, `TILT_LIMIT_EXCEEDED`, `SURFACE_ICE_WARNING`) sent via MQTT client.
-- **Firmware Stack:** C++, Arduino Framework, PubSubClient (MQTT), I2C Protocol.
-</details>
-
----
 
 ### 🚀 Interactive Projects
 
@@ -104,6 +86,23 @@ A wrist-mounted wearable that uses 6-axis IMU data to control cursors via BLE.
   - Low-power optimization for extended battery life.
   - Complementary filter implementation for smooth cursor movement.
 - **Stack:** C++, BLE-HID Library, Embedded Signal Processing.
+</details>
+
+<details>
+<summary><b>🌉 ESP32 Structural Health Monitoring (SHM) System</b></summary>
+<br>
+An open-source, embedded IoT telemetry system designed to monitor bridges and civil structures for mechanical stress, extreme impacts, and dangerous road conditions.
+
+- **The Objective:** Real-time structural safety telemetry (stable Pitch/Roll tilt, sudden G-force impacts, surface freezing warnings) streamed to cloud dashboards via MQTT.
+- **Hardware Integration:**
+  - **ESP32** dual-core processor managing low-latency data loops.
+  - **MPU6050** 6-DOF IMU (Accelerometer & Gyroscope) for tilt and impact tracking.
+  - **MLX90614** contactless infrared thermopile sensor for exact road surface temperature.
+- **Key Breakthroughs:**
+  - Designed and implemented a **Complementary Filter** to fuse gyroscope and accelerometer data to compute robust, drift-free Pitch and Roll angles.
+  - Resolved **units mismatch errors** by converting MPU6050 gyroscope angular velocity from rad/s to deg/s ($\text{deg/s} = \text{rad/s} \times 180/\pi$) before integration.
+  - Developed immediate edge-triggered notification flags (`IMPACT_DETECTED`, `TILT_LIMIT_EXCEEDED`, `SURFACE_ICE_WARNING`) sent via MQTT client.
+- **Firmware Stack:** C++, Arduino Framework, PubSubClient (MQTT), I2C Protocol.
 </details>
 
 ---
